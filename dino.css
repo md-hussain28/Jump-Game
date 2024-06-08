@@ -1,0 +1,212 @@
+/* Navbar styles for mobile */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #202830;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.burger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 8vh;
+  background-color: #202830;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.burger.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+  opacity: 0;
+}
+
+.burger.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ///////////////////// */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.animated-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.animated-button:focus {
+  outline: none;
+}
+
+.animated-button:active {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./images/bg.png);
+  border-image-width: 100px;
+  margin: 0;
+  padding: 0px;
+  background-color: #121212;
+  color: #fff;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  margin-bottom: 0px;
+  padding: 20px 20px;
+  color: #b3b3b3;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 0px 0;
+  border-top: 1px solid #333;
+  margin-top: 00px;
+}
+
+@media (min-width: 600px) {
+  .footer-container {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .footer-section {
+      flex: 1;
+      max-width: 300px;
+      margin: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Frank Poth 12/24/2017 */
+
+* {
+
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    user-select:none;
+  
+  }
+  
+  html {
+  
+    height:100%;
+    width:100%;
+  
+  }
+  
+  body {
+  
+    align-content:space-around;
+    background-color:#202830;
+    color:#ffffff;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto auto;
+    height:100%;
+    justify-items:center;
+    padding:0 8px;
+    width:100%;
+  
+  }
